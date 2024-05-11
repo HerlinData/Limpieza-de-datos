@@ -10,7 +10,7 @@ Entregables:
 - La sintaxis adaptada a un script de python, para automatizar el trabajo se encuentra en [ETL.py](ETL.py)
 - Se recomienda instalar las librerias que se encuentran en el archivo [requirements.txt](requirements.txt), para poder ejecutar correctamente el proceso de limpieza.
 
-#### Reporte de inconsistencias encontradas
+#### `Reporte de inconsistencias encontradas`
 - Inicialmente nos encontramos con un DF de 300 registros, el cual al realizar los primeros ``filtros`` del inicio de la encuesta, nos quedamos con unicamente 91 registros para poder analizar posteriormente.
 - Encontramos que los datos se han guardado en formato object, int64 y float64. Al revisar el DF encontramos que hay registros con valores ' '(vacios). El problema es que no se estaban guardando correctamente como Nulos. (SOLUCIONADO)
 - Se encontró registros que contenian texto y número, procedimos a utilizar una función y quedarnos solo con el número.
